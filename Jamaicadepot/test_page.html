@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jamaica Depot</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <h2>Jamaica Depot Button</h2>
+    <button class="js-demo" 
+    onclick="subscribe();">like</button>
+
+    
+    <br>
+
+    <p>Jamaica Depot Shipping Calculator</p>
+    <p>Orders under $40 = $10 shipping.</p>
+    <p>Orders over $40 = Free Shipping</p>
+    <input placeholder="Cost of Order" class="dollar-amount" type="text" onkeydown=" handlecostKeyDown(event);
+    
+    ">
+    <button  onclick="calculateTotal();">Calculate</button>
+    <h2  class="cart-total"></h2>
+
+    <br>
+
+    <p>Todo List</p>
+    <input class="js-add-todo" placeholder="Add List" type="text">
+    <button onclick="postList();">add</button>
+    <p class="js-the-list"></p>
+    <br>
+    <br>
+
+
+  
+
+<script>
+
+  // loops
+
+  /*
+
+  const todoList = [
+    'make dinner',
+    'wash dishes',
+    'search on Jamaica Depot'
+  ];
+
+  for (let i = 0; i < todoList.length; i++) {
+    const value = todoList[i];
+    console.log(value);
+     }
+
+     */
+
+
+  /*
+  let i = 1;
+
+  while (i <= 5) {
+    console.log(i);
+    i++
+     ;
+  }
+
+  for (let i = 1; i <= 7; i++) {
+    console.log(i);
+  }
+
+  */
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+
+      // to do list array practice
+      const addToDo = [];
+  
+      function postList() {
+        const inputElement = document.querySelector('.js-add-todo');
+
+        const list = inputElement.value
+        addToDo.push(list);
+        console.log(addToDo);
+        inputElement.value = '';                
+      }
+
+
+
+      //arrays and loops practice
+      const myArray = [10,20,30]; 
+      console.log(myArray);
+
+      console.log(myArray[1]);
+
+      myArray[0] = 99;
+      console.log(myArray);
+
+      [1, 'hello', true, {name:'socks'}, [1,2]]
+      console.log(typeof [1,2]);
+      console.log(Array.isArray ([1,2]));
+      console.log(myArray.length);
+      myArray.push(2000)
+      myArray.push(true)
+      myArray.push('ads-1')
+      console.log(myArray)
+      myArray.splice(0,2)
+      console.log(myArray);
+
+
+
+
+
+
+
+
+
+
+
+//functions practice
+function handlecostKeyDown(event) {
+        if (event.key === 'Enter') {
+      calculateTotal();
+      
+    }
+    
+      }
+
+
+      function subscribe() {
+      const likeElement = document.querySelector('.js-demo');
+
+    if (likeElement.innerHTML === 'like') {
+      likeElement.innerHTML = 'liked!'
+
+    } else {
+      likeElement.innerHTML = 'like'
+    }
+
+      } 
+      
+      
+     
+
+      function calculateTotal() {
+        const total = document.querySelector('.dollar-amount');
+
+        let cost = Number(total.value);
+
+        if (cost < 40) {
+          cost = cost + 10;
+
+        }
+
+        document.querySelector('.cart-total').innerHTML = `$${cost}`;
+
+      }
+
+      */
+
+      
+
+
+
+
+
+
+
+
+   
+    </script>
+  </body>
+</html>

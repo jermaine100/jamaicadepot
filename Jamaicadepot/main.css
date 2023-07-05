@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+/* this section is for the banners inside the slider*/
+
+/* Slide show containner*/
+
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  background-color: lightblue;
+  height: 200px;
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 70px;
+  bottom: ;
+  width: auto;
+  margin-top: ;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 27px;
+  transition: o.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/*promotion text*/
+
+.promo-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+/* This marks the end of the promotion banner section*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.item-display {
+  background-color: lightpink;
+  height: 55vh;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+
+.item-display:hover {
+  transform: scale(1.1);
+
+}
+
+.image-test {
+  height: 35vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.auto-motives-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.auto-motive-listings {
+  background-color: lightpink;
+  height: 55vh;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s; 
+
+
+}
+
+.auto-motive-listings:hover{
+  transform: scale(1.1);
+}
+
+.vehicles-image {
+  height: 35vh;
+  width: 100%;
+  overflow: hidden;
+  object-fit:cover;
+}
+
+.real-estate-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+ 
+
+}
+
+.real-estate {
+  background-color: lightblue;
+  height: 55vh;
+  width: 100%;
+  overflow: hidden;
+  object-fit:cover;
+  transition: 0.4s; 
+}
+
+.real-estate:hover {
+  transform: scale(1.1);
+
+}
+
+.all-ads-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 12px;
+  row-gap: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+
+}
+
+.all-adds {
+  background-color: lightblue;
+  height: 55vh;
+  width: 100%;
+  overflow: hidden;
+  object-fit:cover;
+
+}
+
+/*this section is for the post and/sign-up prompt*/
+#signup-prompt {
+  background-color: orange;
+  width: 190px;
+  height: 190px;
+  font-size: 2em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  animation-name: postSignupPrompt;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  right: 10px;
+  top: 370px;
+
+  
+ 
+}
+
+@keyframes postSignupPrompt {
+  50%{box-shadow: 0px 0px 70px rgb(161, 161, 21)}
+  from{transform: scale(.20, .20)}
+
+}
+
+
+/*this marks the end of section for the post and/sign-up prompt*/
+
+
+
+
+
